@@ -4,9 +4,47 @@
 <html>
 <head>
    <style>
-    body {
+      body {
       background-color: black;
       color: gold;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    img.whatsapp-logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Media query for phone-sized screens */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+
+      img.whatsapp-logo {
+        width: 40px;
+        height: 40px;
+      }
     }
   </style>
   <script>
@@ -18,6 +56,6 @@
 <body>
   <h1>Venligst vent et øjeblik..... </h1>
   <h1>Du vil snart blive viderestillet til WhatsApp, hvor vi kan tage imod din bestilling. </h1>
-  <img src="WhatsApp_icon.png" alt="WhatsApp Logo" width="50" height="50">
+  <img src="whatsapp-logo.png" alt="WhatsApp Logo" class="whatsapp-logo">
 </body>
 </html>
