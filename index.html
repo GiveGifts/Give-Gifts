@@ -2,7 +2,7 @@
 <html>
 <head>
    <style>
-    body {
+     body {
    background-color: black;
    color: gold;
    margin: 0;
@@ -22,15 +22,15 @@ h1 {
 }
 
 button {
-   font-size: 24px;
-   padding: 20px 40px;
+   font-size: 70px;
+   padding: 30px 50px;
    margin: 40px;
-   width: 300px;
+   width: 500px;
    background-color: gold;
    color: black;
    border: none;
    cursor: pointer;
-   box-shadow: 0 22px 35px rgba(231, 179, 7, 0.4);
+   box-shadow: 0 30px 40px rgba(240, 185, 4, 0.685);
    border-radius: 20px;
 }
 
@@ -42,8 +42,14 @@ img.whatsapp-logo {
 img.logo {
    width: 400px;
    height: 400px;
-   margin-top: 40px;
+   margin-top: 0px;
 }
+
+footer {
+         font-size: 30px;
+         margin-top: 100px;
+         text-align: center;
+      }
 
 /* Media query for phone-sized screens */
 @media (max-width: 480px) {
@@ -73,7 +79,7 @@ img.logo {
 </head>
 <body>
    <img src="logo.png" alt="Your Logo" class="logo">
-   <h1>Velkommen til vores shop</h1>
+   <h1>Velkommen til vores butik</h1>
  
    <button onclick="redirectToWhatsApp('shop.html')">Vis butikken</button>
    <button onclick="redirectToWhatsApp('contact.html')">Bestil</button>
@@ -83,5 +89,9 @@ img.logo {
          window.location.href = url;
       }
    </script>
+
+<footer>
+   <p>&copy; Made by Jwan Osman.</p>
+</footer>
 </body>
 </html>
