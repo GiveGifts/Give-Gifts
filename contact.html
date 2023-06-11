@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+         background-color: black;
+         color: gold;
+         margin: 0;
+         padding: 20px;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+      }
+
+      h1 {
+         font-size: 50px;
+         text-align: center;
+      }
+
+      button {
+         font-size: 18px;
+         padding: 10px 20px;
+         margin: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: gold;
+         color: black;
+         border: none;
+         cursor: pointer;
+         box-shadow: 0 22px 35px rgba(231, 179, 7, 0.4);
+         border-radius: 15px;
+      }
+
+      button img {
+         width: 40px;
+         height: 40px;
+         margin-right: 5px;
+      }
+
+      img.logo {
+         width: 300px;
+         height: 300px;
+         margin-top: 20px;
+      }
+
+      /* Media query for phone-sized screens */
+      @media (max-width: 480px) {
+         body {
+            padding: 10px;
+         }
+
+         h1 {
+            font-size: 20px;s
+         }
+
+         button {
+            font-size: 16px;
+            padding: 8px 16px;
+         }
+
+         button img {
+            width: 16px;
+            height: 16px;
+         }
+
+         img.logo {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   </style>
+</head>
+<body>
+ 
+   <img src="logo.png" alt="Your Logo" class="logo">
+   <h1>Venligst vent et øjeblik..... </h1>
+   <h1>Hvor vil du kontakte os for at modtage din bestilling? </h1>
+   <button onclick="redirectToWhatsApp('https://wa.me/004591838373')">
+      <img src="whatsapp-logo.png" alt="WhatsApp Logo">
+      WhatsApp
+   </button>
+
+   
+   <button onclick="redirectToWhatsApp('https://www.instagram.com/give.gifts._/')">
+      <img src="insta_logo.png" alt="Instagram Logo">
+      Instagram
+   </button>
+
+   <script>
+      function redirectToWhatsApp(url) {
+         window.location.href = url;
+      }
+   </script>
+</body>
+</html>

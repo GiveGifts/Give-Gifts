@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+         background-color: black;
+         color: gold;
+         margin: 0;
+         padding: 20px;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+      }
+
+      h1 {
+         font-size: 50px;
+         text-align: center;
+      }
+
+      button {
+         font-size: 18px;
+         padding: 10px 20px;
+         margin: 25px;
+         width: 200px;
+         background-color: gold;
+         color: black;
+         border: none;
+         cursor: pointer;
+         box-shadow: 0 22px 35px rgba(231, 179, 7, 0.4);
+         border-radius: 15px;
+      }
+
+      img.whatsapp-logo {
+         width: 300px;
+         height: 300px;
+      }
+      
+      img.logo {
+         width: 300px;
+         height: 300px;
+         margin-top: 20px;
+      }
+
+
+      /* Media query for phone-sized screens */
+      @media (max-width: 480px) {
+         body {
+            padding: 10px;
+         }
+
+         h1 {
+            font-size: 20px;
+         }
+
+         button {
+            font-size: 16px;
+            padding: 8px 0;
+            width: 150px;
+         }
+
+         img.whatsapp-logo {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   </style>
+</head>
+<body>
+   <img src="logo.png" alt="Your Logo" class="logo">
+   <h1>Velkommen til vores shop</h1>
+ 
+   <button onclick="redirectToWhatsApp('shop.html')">Vis butikken</button>
+   <button onclick="redirectToWhatsApp('contact.html')">Bestil</button>
+
+   <script>
+      function redirectToWhatsApp(url) {
+         window.location.href = url;
+      }
+   </script>
+</body>
+</html>
