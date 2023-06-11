@@ -16,7 +16,7 @@
       }
 
       h1 {
-         font-size: 50px;
+         font-size: 60px;
          text-align: center;
       }
 
@@ -37,9 +37,10 @@
       }
       
       img.insta {
-         width: 400px;
-         height: 200px;
+         width: 700px;
+         height: 350px;
          margin-top: 20px;
+         margin-bottom: 40px;
       }
 
       img.logo {
@@ -47,6 +48,13 @@
          height: 300px;
          margin-top: 20px;
       }
+
+      footer {
+         font-size: 30px;
+         margin-top: 100px;
+         text-align: center;
+      }
+
 
       /* Line Filling Animation */
       @keyframes line-filling {
@@ -59,8 +67,9 @@
       }
 
       .line-container {
-         width: 400px;
-         height: 40px;
+       
+         width: 680px;
+         height: 50px;
          background-color: black;
          border: 2px solid gold;
          margin-top: 20px;
@@ -71,7 +80,7 @@
          width: 0%;
          height: 100%;
          background-color: gold;
-         animation: line-filling 10.1s linear forwards;
+         animation: line-filling 15s linear forwards;
       }
 
       .small-logo {
@@ -79,7 +88,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-}
+      }
 
       /* Media query for phone-sized screens */
       @media (max-width: 480px) {
@@ -106,9 +115,8 @@
    <script>
       setTimeout(function() {
          window.location.href = "https://l.instagram.com/?u=https%3A%2F%2Fwww.instagram.com%2Fgive.gifts._%2Fshop&e=AT1GdvF9O3QeMDZ-FWXEesmgqpYcNjKcTdfqw1v2II5eW-a4IeKDlk0n_1u4w0FitwOuZvAoz-hhj3yvGoHHDvKduH0Sx9cSJ6C_2k0";
-      }, 10000); // 10000 milliseconds = 10 seconds
+      }, 15000); // 10000 milliseconds = 10 seconds
    </script>
-
 </head>
 <body>
    <img src="logo.png" alt="Your Logo" class="logo">
@@ -117,5 +125,14 @@
    <img src="insta.png" alt="Instagram" class="insta">
    <div class="line-container">
       <div class="line-progress"></div>
-      
-   </div
+   </div>
+   <script>
+      function redirectToWhatsApp(url) {
+         window.location.href = url;
+      }
+   </script>
+   <footer>
+      <p>&copy; Made by Jwan Osman.</p>
+   </footer>
+</body>
+</html>
