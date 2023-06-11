@@ -16,29 +16,35 @@
       }
 
       h1 {
-         font-size: 50px;
+         font-size: 65px;
          text-align: center;
       }
 
       button {
-         font-size: 18px;
-         padding: 10px 20px;
-         margin: 30px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         background-color: gold;
-         color: black;
-         border: none;
-         cursor: pointer;
-         box-shadow: 0 22px 35px rgba(231, 179, 7, 0.4);
-         border-radius: 15px;
+         font-size: 70px;
+   padding: 30px 70px;
+   margin: 40px;
+   width: 600px;
+   background-color: gold;
+   color: black;
+   border: none;
+   cursor: pointer;
+   box-shadow: 0 30px 40px rgba(240, 185, 4, 0.685);
+   border-radius: 20px;
+}
+footer {
+         font-size: 30px;
+         margin-top: 100px;
+         text-align: center;
       }
 
+   
+
       button img {
-         width: 40px;
-         height: 40px;
-         margin-right: 5px;
+         width: 100px;
+         height: 100px;
+         margin-right: 10px;
+         margin-bottom: -30px;
       }
 
       img.logo {
@@ -58,13 +64,13 @@
          }
 
          button {
-            font-size: 16px;
-            padding: 8px 16px;
+            font-size: 30px;
+            padding: 16px 30px;
          }
 
          button img {
-            width: 16px;
-            height: 16px;
+            width: 30px;
+            height: 30px;
          }
 
          img.logo {
@@ -77,8 +83,8 @@
 <body>
  
    <img src="logo.png" alt="Your Logo" class="logo">
-   <h1>Venligst vent et øjeblik..... </h1>
-   <h1>Hvor vil du kontakte os for at modtage din bestilling? </h1>
+   <h1>Kontakt os for at bestille </h1>
+   <h1>Hvor vil du kontakte os for at bestille? </h1>
    <button onclick="redirectToWhatsApp('https://wa.me/004591838373')">
       <img src="whatsapp-logo.png" alt="WhatsApp Logo">
       WhatsApp
@@ -95,5 +101,8 @@
          window.location.href = url;
       }
    </script>
+   <footer>
+      <p>&copy; Made by Jwan Osman.</p>
+   </footer>
 </body>
 </html>
